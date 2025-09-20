@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hanifx Module</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1>hanifx Module</h1>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<section class="hero">
+  <canvas id="particles"></canvas>
+  <div class="hero-content">
+    <h1 class="animate-slide">hanifx Module</h1>
+    <p class="animate-fade">Ultimate Encoding Module for Developers</p>
+    <a href="#stats" class="cta">Get Started</a>
+  </div>
+</section>
+
+<section class="intro">
+  <h2>Install Hanifx</h2>
+  <div class="install">
+    <code id="pipCmd">pip install hanifx</code>
+    <button class="copyBtn" data-target="pipCmd">Copy</button>
+  </div>
+  <div class="install">
+    <code id="gemCmd">gem install hanifx</code>
+    <button class="copyBtn" data-target="gemCmd">Copy</button>
+  </div>
+</section>
+
+<section class="stats" id="stats">
+  <h2>Stats</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>PyPI Downloads</h3>
+      <p id="pypiDownloads">176</p>
+    </div>
+    <div class="card">
+      <h3>RubyGems Downloads</h3>
+      <p id="gemDownloads">89</p>
+    </div>
+  </div>
+</section>
+
+<section class="examples">
+  <h2>Usage Example</h2>
+  <pre><code>
+from hanifx_secure_encode import encode_text, encode_file
+
+# Encode text
+result = encode_text("Sensitive Information")
+print(result)
+
+# Encode file
+encoded_file = encode_file("example.py")
+print(f"Encoded file created: {encoded_file}")
+
+    #ruby 
+
+    require 'hanifx'
+# Encode text
+encoded = Hanifx.encode_text("Hello World")
+puts encoded
+# Encode file manually in interactive script
+# See interactive_hanifx_pro.rb for full workflow
+    
+  </code></pre>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <form id="contactForm">
+    <div class="form-group">
+      <input type="text" required>
+      <label>Your Name</label>
+    </div>
+    <div class="form-group">
+      <input type="email" required>
+      <label>Your Email</label>
+    </div>
+    <div class="form-group">
+      <textarea required></textarea>
+      <label>Your Message</label>
+    </div>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 hanifx. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+      </html>
